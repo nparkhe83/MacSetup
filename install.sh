@@ -11,7 +11,7 @@
 dotfiledir="${HOME}/dotfiles"
 
 # list of files/folders to symlink in ${homedir}
-files=(zshrc zprofile zprompt bashrc bash_profile bash_prompt aliases private)
+files=(zshrc zprofile zprompt bashrc bash_profile bash_prompt aliases functions envt_vars)
 
 # change to the dotfiles directory
 echo "Changing to the ${dotfiledir} directory"
@@ -23,16 +23,13 @@ for file in "${files[@]}"; do
     ln -sf "${dotfiledir}/.${file}" "${HOME}/.${file}"
 done
 
-# Run the MacOS Script
+Run the MacOS Script
 ./macOS.sh
 
-# Run the Homebrew Script
+Run the Homebrew Script
 ./brew.sh
 
 # Run VS Code Script
-./vscode.sh
-
-# Run the Sublime Script
-./sublime.sh
+# ./vscode.sh
 
 echo "Installation Complete!"

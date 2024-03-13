@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+
+function touch2() { mkdir -p "$(dirname "$1")" && touch "$1"; }
+
+function mkcd() {
+  last=$(eval "echo \$$#")
+  if [ ! -n "$last" ]; then
+    echo "Enter a directory name"
+  elif [ -d $last ]; then
+    echo "\`$last' already exists"
+  else
+    mkdir $@ && cd $last
+  fi
+}
+
+function cdf() {
+  cd $(find . -type d -name node_modules -prune -o -name .git -prune -o -name Library -prune -o -type d -print | fzf)
+}
