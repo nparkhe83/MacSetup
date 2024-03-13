@@ -30,6 +30,6 @@ Run the Homebrew Script
 ./brew.sh
 
 # Run VS Code Script
-# ./vscode.sh
+./vscode.sh
 
 echo "Installation Complete!"

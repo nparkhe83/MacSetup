@@ -1,58 +1,205 @@
+// Place your key bindings in this file to overwrite the defaults
 [
-    {
-        "key": "cmd+b",
-        "command": "code-runner.run"
-    },
-    {
-        "key": "shift+cmd+k",
-        "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "escape",
-        "command": "workbench.action.terminal.toggleTerminal",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "escape",
-        "command": "workbench.action.output.toggleOutput",
-        "when": "inOutput"
-    },
-    {
-        "key": "cmd+y",
-        "command": "redo",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+y",
-        "command": "editor.action.webvieweditor.redo",
-        "when": "!editorFocus && !inputFocus && activeEditor == 'WebviewEditor'"
-    },
-    {
-        "key": "shift+cmd+z",
-        "command": "workbench.action.toggleZenMode"
-    },
-    {
-        "key": "shift+cmd+z",
-        "command": "workbench.action.exitZenMode",
-        "when": "inZenMode"
-    },
-    {
-        "key": "escape escape",
-        "command": "-workbench.action.exitZenMode",
-        "when": "inZenMode"
-    },
-    {
-        "key": "ctrl+cmd+down",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+cmd+up",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+cmd+w",
-        "command": "editor.action.toggleWordWrap"
+  {
+    "key": "shift+enter",
+    "command": "extension.vim_escape",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+k f",
+    "command": "editor.action.codeAction",
+    "args": {
+      "kind": "source.fixAll.tslint",
+      "apply": "first"
     }
+  },
+  {
+    "key": "cmd+g cmd+s",
+    "command": "git.stageSelectedRanges"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "f4",
+    "command": "git.openFile",
+    "when": "editorTextFocus && isInDiffEditor "
+  },
+  {
+    "key": "cmd+g cmd+l",
+    "command": "git.stage"
+  },
+  {
+    "key": "cmd+g cmd+r",
+    "command": "git.revertSelectedRanges"
+  },
+  {
+    "key": "cmd+=",
+    "command": "extension.customWindowZoomIn"
+  },
+  {
+    "key": "cmd+9",
+    "command": "-extension.customWindowZoomIn"
+  },
+  {
+    "key": "cmd+-",
+    "command": "extension.customWindowZoomOut"
+  },
+  {
+    "key": "cmd+8",
+    "command": "-extension.customWindowZoomOut"
+  },
+  {
+    "key": "cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "alt+;",
+    "command": "extension.jumpy-word",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+;",
+    "command": "extension.jumpy-line",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "Escape",
+    "command": "extension.jumpy-exit",
+    "when": "editorTextFocus && jumpy.isJumpyMode"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "bracket-jumper.ascendLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "-bracket-jumper.ascendLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+]",
+    "command": "bracket-jumper.ascendRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "-bracket-jumper.ascendRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+left",
+    "command": "-bracket-jumper.selectLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "-bracket-jumper.selectRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "-bracket-jumper.selectAscendLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "-bracket-jumper.selectAscendRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+[",
+    "command": "bracket-pair-colorizer.expandBracketSelection"
+  },
+  {
+    "key": "ctrl+shift+]",
+    "command": "bracket-pair-colorizer.undoBracketSelection"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-extension.vim_ctrl+j",
+    "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+  },
+  {
+    "key": "cmd+r",
+    "command": "-workbench.action.reloadWindow",
+    "when": "isDevelopment"
+  },
+  {
+    "key": "cmd+r",
+    "command": "settings.cycle.lineNumber"
+  },
+  {
+    "key": "shift+cmd+\\",
+    "command": "-editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+\\",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "alt+cmd+h",
+    "command": "-rest-client.history"
+  },
+  {
+    "key": "alt+cmd+h",
+    "command": "extension.relativePath",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "-extension.relativePath",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-actions.findWithSelection"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-editor.action.toggleScreenReaderAccessibilityMode",
+    "when": "accessibilityHelpIsShown"
+  },
+  {
+    "key": "cmd+e",
+    "command": "emojisense.quickEmoji",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-emojisense.quickEmoji",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+e",
+    "command": "emojisense.quickEmojiTerminal",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-emojisense.quickEmojiTerminal",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "-emojisense.quickEmojitextTerminal",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "-emojisense.quickEmojitext",
+    "when": "editorTextFocus"
+  }
 ]

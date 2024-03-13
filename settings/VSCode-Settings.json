@@ -1,48 +1,226 @@
 {
-  "workbench.colorTheme": "Predawn",
-  "workbench.iconTheme": "ayu",
-  "editor.fontFamily": "Source Code Pro",
-  "debug.console.fontFamily": "Source Code Pro",
-  "editor.fontWeight": "500",
-  "terminal.integrated.fontWeight": "600",
-  "editor.fontSize": 16, //Use 22 for Screen Recordings
-  "debug.console.fontSize": 16, //Use 22 for Screen Recordings
-  "terminal.integrated.fontSize": 16, //Use 22 for Screen Recordings
-  "window.zoomLevel": 0, // Use 2 for Screen Recordings
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.wordWrap": "off"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[plaintext]": {
+    "editor.wordWrap": "on"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "autoimport.doubleQuotes": true,
+  "autoimport.showNotifications": true,
+  "customWindowZoom.zoomLevelChangeValue": 0.5,
+  "dashboard.projectData": null,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.autoClosingQuotes": "languageDefined",
+  "editor.autoSurround": "languageDefined",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.tslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
+  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.guides.bracketPairs": "active",
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "none",
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "*.js": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.alwaysShowStatus": true,
+  "explorer.confirmDragAndDrop": true,
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "dev": "javascript"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 5000,
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "build": true,
+    "node_modules": true
+  },
+  "git.suggestSmartCommit": false,
+  "gitlens.blame.ignoreWhitespace": true,
+  "gitlens.views.repositories.files.layout": "tree",
+  "search.exclude": {
+    "**/README.md": true,
+    "**/bower_components": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/node_modules": false,
+    "package-lock.json": true
+  },
+  "settings.cycle": [
+    {
+      "id": "lineNumber",
+      "overrideWorkspaceSettings": false,
+      "values": [
+        {
+          "editor.lineNumbers": "on"
+        },
+        {
+          "editor.lineNumbers": "relative"
+        }
+      ]
+    }
+  ],
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.defaultProfile.osx": "/bin/zsh (migrated)",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.profiles.osx": {
+    "/bin/zsh (migrated)": {
+      "args": ["-l"],
+      "path": "/bin/zsh"
+    }
+  },
+  "terminal.integrated.tabs.enabled": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsserver.log": "off",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.easymotion": true,
+  "vim.enableNeovim": true,
+  "vim.handleKeys": {
+    "<C-j>": false,
+    "<C-k>": false
+  },
+  "vim.history": 100,
+  "vim.insertModeKeyBindings": [
+    {
+      "after": ["<Esc>"],
+      "before": ["j", "k"],
+      "commands": [
+        {
+          "command": "settings.cycle.lineNumber"
+        }
+      ]
+    },
+    {
+      "after": ["<Esc>", "<Caps_Lock>"],
+      "before": ["J", "K"],
+      "commands": [
+        {
+          "command": "settings.cycle.lineNumber"
+        }
+      ]
+    }
+  ],
+  "vim.leader": "\\",
+  "vim.matchpairs": "(:),{:},[:],<:>",
+  "vim.smartRelativeLine": true,
+  "vim.sneak": true,
+  "vim.sneakUseIgnorecaseAndSmartcase": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.closeWhenEmpty": true,
+  "window.openFoldersInNewWindow": "on",
+  "window.title": "${rootPath}${separator}${activeEditorMedium}${dirty}",
+  "workbench.colorTheme": "Dark++ Italic",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.revealIfOpen": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.settings.useSplitJSON": true,
+  "wrapSelection.patterns": {
+    "=>": "() => ${text}",
+    "log": "console.log(`${text}: `, ${text});",
+    "promise": "new Promise((resolve, reject) => resolve(${text}));"
+  },
+  "editor.fontSize": 14,
+  "redhat.telemetry.enabled": true,
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "always"
-    }
+    "editor.formatOnType": true
   },
-  "pylint.args": ["--disable=C0114,C0115,C0116"],
-  "code-runner.clearPreviousOutput": true,
-  "code-runner.showExecutionMessage": false,
-  "code-runner.ignoreSelection": true,
-  "code-runner.saveFileBeforeRun": true,
-  "code-runner.executorMap": {
-    "python": "\"$pythonPath\" -u $fullFileName"
+  "git.openRepositoryInParentFolders": "never",
+  "diffEditor.experimental.showMoves": true,
+  "workbench.editor.empty.hint": "hidden",
+  "window.zoomLevel": 0,
+  "git.autofetch": true,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "go.toolsManagement.autoUpdate": true,
+  "cloudcode.duetAI.project": "admin-nilesh",
+  "cloudcode.project": "poc-54d86196",
+  "github.copilot.advanced": {},
+  "github.gitAuthentication": false,
+  "[dockerfile]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   },
-  "[plaintext]": {
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
-    }
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-show-information-expiration": "2024-02-21T13:43:41.349Z"
   },
-  "editor.quickSuggestionsDelay": 100,
-  "zenMode.centerLayout": false,
-  "zenMode.fullScreen": false,
-  "zenMode.hideLineNumbers": false,
-  "editor.minimap.enabled": false,
-  "workbench.settings.openDefaultSettings": true,
-  "workbench.settings.useSplitJSON": false,
-  "workbench.settings.editor": "json",
-  "workbench.startupEditor": "newUntitledFile"
+  "cloudcode.duetAI.inlineSuggestions.enableAuto": false,
+  "cloudcode.duetAI.languages": [
+    "dockerfile",
+    "dockercompose",
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "javascriptreact",
+    "makefile",
+    "markdown",
+    "python",
+    "shellscript",
+    "terraform-vars",
+    "typescriptreact",
+    "typescript",
+    "tf",
+    "terraform",
+    "sql",
+    "tfvars",
+    "yaml"
+  ],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "gitlens.ai.experimental.provider": "openai",
+  "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
+  "githubPullRequests.pullBranch": "never"
 }

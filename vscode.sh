@@ -7,16 +7,25 @@ fi
 
 # Install VS Code Extensions
 extensions=(
-    ms-python.python
-    ms-python.pylint
-    ms-python.vscode-pylance
-    ms-python.debugpy
     GitHub.copilot
-    ms-vscode.Theme-PredawnKit
-    teabyii.ayu
-    formulahendry.code-runner
     esbenp.prettier-vscode
-    znck.grammarly
+    aaron-bond.better-comments
+    formulahendry.auto-rename-tag
+    naumovs.color-highlight
+    craigb85.custom-window-zoom
+    eamodio.gitlens
+    hashicorp.terraform
+    wix.vscode-import-cost
+    orta.vscode-jest
+    ritwickdey.liveserver
+    ms-vscode.makefile-tools
+    shd101wyy.markdown-preview-enhanced
+    yoavbls.pretty-ts-errors
+    humao.rest-client
+    foxundermoon.shell-format
+    gruntfuggly.todo-tree
+    vscodevim.vim
+    jeremyljackson.vs-docblock
 )
 
 # Get a list of all currently installed extensions.
@@ -53,6 +62,6 @@ fi
 
 # Open VS Code to sign-in to extensions
 code .
-echo "Login to extensions (Copilot, Grammarly, etc) within VS Code."
+echo "Login to extensions (Copilot, etc) within VS Code."
 echo "Press enter to continue..."
 read
