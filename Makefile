@@ -16,3 +16,11 @@ backup_UserHomeConfig:
 	@-mkdir $(BACKUP_DIR)
 	@-cp ~/.zshrc ~/.zshrc.backup ~/.zshrc.pre-oh-my-zsh  $(BACKUP_DIR)
 	@echo "Completed"
+
+.PHONY: open_github_repo_url
+open_github_repo_url:
+	@open -a "Google Chrome" $$(git config --get remote.origin.url)
+
+.PHONY: remove_upstream_remote
+remove_upstream_remote:
+	@git remote remove upstream
