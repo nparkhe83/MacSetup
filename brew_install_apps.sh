@@ -7,8 +7,50 @@ packages=(
   "git"
   "tree"
   "node"
-  "volta"
   "neovim"
+  "tmux"
+  "rsync"
+
+  # disk usage apps
+  "ncdu"
+  "dust"
+
+  # notify from command line
+  "ntfy"
+
+  # Extremely fast tool to remove dupes and other lint from your filesystem
+  "rmlint"
+
+  # Programmatically correct mistyped console commands
+  "thefuck"
+
+  # Simple, fast and user-friendly alternative to find
+  "fd"
+
+  # User-friendly cURL replacement (command-line HTTP client)
+  "httpie"
+
+  # JavaScript toolchain manager for reproducible environments
+  "volta"
+
+  # A simple terminal UI for both docker and docker-compose
+  "lazydocker"
+
+  # Better ls
+  "eza"
+
+  # Better cat
+  "bat"
+
+  # Run command when file changes
+  "entr"
+
+  # midnight commander - file manager
+  # https://www.youtube.com/watch?v=fJOkuaihAek
+  "midnight-commander"
+
+  # Improved shell history
+  "atuin"
 )
 # Select packages to install
 selected_packages=()

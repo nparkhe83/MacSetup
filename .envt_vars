@@ -6,4 +6,15 @@ export EDITOR='nvim'
 # Exclude commands that start with a space i.e for commands containing secrets
 export HISTCONTROL=ignoredups:erasedups:ignorespace
 
+export ZSH="$HOME/.oh-my-zsh"
 
+export VOLTA_HOME=$HOME/.volta
+
+export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
+
+ZSH_THEME="robbyrussell"
+
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+
+source $ZSH/oh-my-zsh.sh

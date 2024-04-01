@@ -119,14 +119,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+[",
-    "command": "bracket-pair-colorizer.expandBracketSelection"
-  },
-  {
-    "key": "ctrl+shift+]",
-    "command": "bracket-pair-colorizer.undoBracketSelection"
-  },
-  {
     "key": "ctrl+j",
     "command": "-extension.vim_ctrl+j",
     "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"

@@ -25,6 +25,7 @@ fi
 brew update
 brew upgrade
 brew upgrade --cask
+brew tap rusty-ferris-club/tap
 
 # Install apps and packages listed in brew_install_apps.sh
 . ./brew_install_apps.sh
@@ -64,6 +65,8 @@ else
     echo "Installing $font_name..."
     brew install --cask "$font_name"
 fi
+
+source .finish-zsh-setup.sh
 
 # Clean up  for safe measure
 brew cleanup
