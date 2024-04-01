@@ -8,4 +8,4 @@ read
 xcode-select --install
 
 # Set scroll as traditional instead of natural
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false && killall Finder
+defaults write -g com.apple.swipescrolldirection -boolean NO && killall Finder
