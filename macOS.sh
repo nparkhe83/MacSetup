@@ -1,6 +1,7 @@
 #!/usr/bin zsh
 
-echo "Complete the installation of Xcode Command Line Tools before proceeding."
+echo "\n\n\nXCode will begin installation. \nPlease confirm on popup"
+echo "Installation will take 5-10 mins based on your internet connection"
 echo "Press enter to continue..."
 read
 
