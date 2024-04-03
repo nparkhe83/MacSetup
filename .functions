@@ -1,5 +1,4 @@
-# fix the line below
-# #! /usr/bin/env zsh
+#!/usr/bin/env zsh
 
 # List all functions
 function listFunctions() {

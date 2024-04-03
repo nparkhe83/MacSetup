@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 #############################################################
 #############################################################
@@ -18,12 +18,6 @@
 
 # dotfiles directory
 dotfilesdir="${HOME}/dotfiles"
-
-# Download git repo if it does not exist
-if [ ! -d $dotfilesdir ]; then
-    cd ~
-    git clone https://github.com/nparkhe83/dotfiles.git
-fi
 
 # change to the dotfiles directory
 echo "Changing to the ${dotfilesdir} directory"

@@ -48,3 +48,4 @@ alias vim="nvim "
 
 # Git Aliases
 alias gsm='git switch main'
+
